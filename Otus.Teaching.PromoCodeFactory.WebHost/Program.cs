@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Otus.Teaching.PromocodeFactory.WebHost
+namespace Otus.Teaching.PromoCodeFactory.WebHost
 {
     public class Program
     {

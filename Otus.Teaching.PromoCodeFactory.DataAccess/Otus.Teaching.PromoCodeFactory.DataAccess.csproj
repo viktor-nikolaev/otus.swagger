@@ -5,7 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Otus.Teaching.PromocodeFactory.Core\Otus.Teaching.PromocodeFactory.Core.csproj" />
+      <ProjectReference Include="..\Otus.Teaching.PromoCodeFactory.Core\Otus.Teaching.PromoCodeFactory.Core.csproj" />
     </ItemGroup>
 
 </Project>
