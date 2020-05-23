@@ -9,6 +9,9 @@ using Otus.Teaching.PromoCodeFactory.WebHost.Models;
 
 namespace Otus.Teaching.PromoCodeFactory.WebHost.Controllers
 {
+    /// <summary>
+    /// Сотрудники
+    /// </summary>
     [ApiController]
     [Route("api/v1/[controller]")]
     public class EmployeesController
@@ -21,6 +24,10 @@ namespace Otus.Teaching.PromoCodeFactory.WebHost.Controllers
             _employeeRepository = employeeRepository;
         }
         
+        /// <summary>
+        /// Получить данные всех сотрудников
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<List<EmployeeShortResponse>> GetEmployeesAsync()
         {
@@ -37,6 +44,10 @@ namespace Otus.Teaching.PromoCodeFactory.WebHost.Controllers
             return employeesModelList;
         }
         
+        /// <summary>
+        /// Получить данные сотрудника по Id
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("{id:guid}")]
         public async Task<ActionResult<EmployeeResponse>> GetEmployeeByIdAsync(Guid id)
         {
